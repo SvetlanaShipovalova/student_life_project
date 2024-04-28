@@ -1,16 +1,93 @@
+@media(min-width: 992px) {
+	.title_parent {
+		grid-template-columns: auto;
+		grid-template-rows: repeat(3, auto);
+	}
+
+	.title_img {
+		grid-area: 1 / 1 / 2 / 2;
+		padding: 0px;
+	}
+
+	.title_txt_1 {
+		grid-area: 2 / 1 / 3 / 2;
+		font-size: 27px;
+	}
+
+	.title_txt_2 {
+		grid-area: 3 / 1 / 4 / 2;
+		font-size: 22px;
+	}
+
+	.header {
+		height: 100px;
+	}
+}
+
+@media(min-width: 1250px) {
+	.title_parent {
+		grid-template-columns: repeat(2, auto);
+		grid-template-rows: repeat(3, auto);
+	}
+
+	.title_img {
+		grid-area: 1 / 1 / 4 / 2;
+
+	}
+
+	.title_txt_1 {
+		margin-top: 60px;
+		grid-area: 1 / 2 / 2 / 3;
+		font-weight: 350;
+		font-size: 32px;
+	}
+
+	.title_txt_2 {
+		grid-area: 2 / 2 / 4 / 3;
+		font-weight: 350;
+		font-size: 24px;
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+
+	.header {
+		height: 76px;
+	}
+}
+
+@media(min-width: 1400px) {
+	.title_txt_2 {
+		padding-left: 80px;
+		padding-right: 80px;
+	}
+}
+
+/*Появление текста при скроллинге*/
+.element-animation {
+	opacity: 0;
+	transform: translateY(30px);
+}
+
+.element-animation.element-show {
+	opacity: 1;
+	transition: all 2s;
+	transform: translateY(0%);
+}
+
 /*Тело*/
 body {
 	height: auto;
 	width: 100%;
 	padding: 0;
 	margin: 0;
-	margin-top: 70px;
 	font-family: "Roboto Slab", serif;
 	font-style: normal;
-
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 76px;
 }
 
-.parent {
+.structure {
 	display: grid;
 	grid-template-columns: repeat(2, auto);
 	grid-template-rows: repeat(4, auto);
@@ -23,13 +100,12 @@ body {
 .header {
 	grid-area: 1 / 1 / 2 / 2;
 	background-color: #a98467;
-	height: 76px;
 	position: fixed;
 	top: 0;
 	width: 100%;
 	z-index: 1000;
 	font-weight: 400;
-	font-size: 24px;
+	font-size: 26px;
 }
 
 .container {
@@ -85,7 +161,7 @@ nav ul li a {
 
 .title {
 	position: relative;
-	grid-area: 2 / 1 / 3 / 3;
+	grid-area: 2 / 1 / 3 / 2;
 	background-color: #dde5b4;
 	height: auto;
 	text-align: center;
@@ -94,34 +170,25 @@ nav ul li a {
 
 .title_parent {
 	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	grid-template-rows: repeat(3, 1fr);
-	grid-column-gap: 40px;
+	grid-column-gap: 50px;
 	grid-row-gap: 0px;
-}
-
-.title_img {
-	grid-area: 1 / 1 / 4 / 2;
 }
 
 .title_txt_1 {
 	margin-top: 60px;
-	grid-area: 1 / 2 / 2 / 3;
-	font-weight: 350;
-	font-size: 36px;
+	font-weight: 550;
 }
 
 .title_txt_2 {
-	grid-area: 2 / 2 / 4 / 3;
+	margin-top: 20px;
 	font-weight: 350;
-	font-size: 27px;
 }
 
 /*Содержание*/
 
 .resources {
 	position: relative;
-	grid-area: 3 / 1 / 4 / 3;
+	grid-area: 3 / 1 / 4 / 2;
 	background: #faf1e6;
 	height: auto;
 	padding: 50px;
@@ -161,18 +228,32 @@ nav ul li a {
 	font-size: 26px;
 }
 
-p {
-	margin: 10px;
+.card {
+	width: 140px;
+	height: 140px;
+	margin-bottom: 40px;
 }
+
+.card img {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+.card p {
+	width: 140px;
+}
+
 
 /*Подвал*/
 
 .footer {
 	position: relative;
-	grid-area: 5 / 1 / 6 / 2;
+	grid-area: 4 / 1 / 5 / 2;
 	background-color: #a98467;
-	height: 200px;
+	height: auto;
 	padding: 50px;
+	width: 100%;
 }
 
 .footer_row {
@@ -184,19 +265,16 @@ p {
 }
 
 .contact_txt {
-	font-weight: 400;
-	font-size: 29px;
+	font-weight: 450;
+	font-size: 27px;
+
 }
 
 .contact_txt_1,
 .contact_txt_2 {
-	font-weight: 400;
-	font-size: 22px;
+	font-weight: 350;
+	font-size: 18px;
 	padding: 10px;
-
-	span {
-		font-weight: 600;
-	}
 }
 
 .contact_txt_1. .contact {
