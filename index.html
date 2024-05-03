@@ -53,37 +53,72 @@
 			</div>
 			<div class="menu">
 				<div class="card">
-					<img src="img/movie.png" alt="" width="100" height="90">
+					<a href="#movies" onclick="showDv('1')"><img src="img/movie.png" alt="" width="100" height="90"></a>
 					<div class="description">
 						<p>Фильмы</p>
 					</div>
 				</div>
 				<div class="card">
-					<img src="img/podcast.png" alt="" width="50" height="90">
+					<a href="#podcasts" onclick="showDv('2')"><img src="img/podcast.png" alt="" width="50"
+							height="90"></a>
 					<div class="description">
 						<p>Подкасты</p>
 					</div>
 				</div>
 				<div class="card">
-					<img src="img/book.png" alt="" width="110" height="90">
+					<a href="#books" onclick="showDv('3')"><img src="img/book.png" alt="" width="110" height="90"></a>
 					<div class="description">
 						<p>Книги</p>
 					</div>
 				</div>
 				<div class="card">
-					<img src="img/checklist.png" alt="" width="70" height="90">
+					<a href="#checklists" onclick="showDv('4')"><img src="img/checklist.png" alt="" width="70"
+							height="90"></a>
 					<div class="description">
 						<p>Чек-листы</p>
 					</div>
 				</div>
 				<div class="card">
-					<img style="align-self:center;" src="img/apps.png" alt="" width="50" height="90">
+					<a href="#useful_app" onclick="showDv('5')"><img style="align-self:center;" src="img/apps.png"
+							alt="" width="50" height="90"></a>
 					<div class="description">
 						<p>Полезные <br>приложения</p>
 					</div>
 				</div>
 			</div>
+		</div>
+	</div>
+	<div class="content">
+		<div id="movies">
+			<div id="d1">
+				<div
+					style="background-image: url(img/sun-light-reflection-glass.jpg); width: 100%; height: 500px; background-size: 100% 100%;">
+					<div class="sketchy">
+						<p>Фильмы</p><span>Подборка фильмов для самообучения и саморазвития</span>
+					</div>
+				</div>
+				<div> </div>
+			</div>
+		</div>
+		<div id="podcasts">
+			<div style="background: red;display:none; width: 100%;" id="d2">
 
+			</div>
+		</div>
+		<div id="books">
+			<div style="background: green;display:none; width: 100%;" id="d3">
+
+			</div>
+		</div>
+		<div id="checklists">
+			<div style="background: green;display:none; width: 100%;" id="d4">
+
+			</div>
+		</div>
+		<div id="useful_app">
+			<div style="background: green;display:none; width: 100%;" id="d5">
+
+			</div>
 		</div>
 	</div>
 	<div class="footer">
@@ -115,6 +150,15 @@
 
 		for (let elm of elements) {
 			observer.observe(elm);
+		}
+	</script>
+	<script type="text/javascript">
+		allDiv = 5;
+		function showDv(n) {
+			for (i = 1; allDiv + 1 > i; i++) {
+				document.getElementById('d' + i).style.display = 'none';
+			}
+			document.getElementById('d' + n).style.display = 'flex';
 		}
 	</script>
 </body>

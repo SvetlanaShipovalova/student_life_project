@@ -1,3 +1,48 @@
+.content{
+	width: 100%;
+	height: auto;
+	background: #dde5b4;
+	grid-area: 4 / 1 / 5 / 2;
+}
+#d1{
+	display:none; 
+	height: auto;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+}
+
+.sketchy {
+	border-radius: 120px 90px 60px 30px/30px 60px 90px 120px;
+	width: 500px;
+	height: 210px;
+	background-color: #f2f3d6;
+	border:solid 5px #311e23;
+	border-width: 12px;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-family: 'Just Another Hand', cursive;
+	font-size: 27px;
+	text-align: center;
+}
+.sketchy p{
+	text-transform: uppercase;
+    letter-spacing: 0.3ch;
+	font-size: 36px;
+	}
+
+
+
+
+
+
+
+
+
+
+
 @media(min-width: 992px) {
 	.title_parent {
 		grid-template-columns: auto;
@@ -61,6 +106,8 @@
 		padding-right: 80px;
 	}
 }
+
+
 
 /*Появление текста при скроллинге*/
 .element-animation {
@@ -249,7 +296,7 @@ nav ul li a {
 
 .footer {
 	position: relative;
-	grid-area: 4 / 1 / 5 / 2;
+	grid-area: 5 / 1 / 6 / 2;
 	background-color: #a98467;
 	height: auto;
 	padding: 50px;
