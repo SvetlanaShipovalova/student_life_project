@@ -4,13 +4,12 @@
 <head>
 	<meta charset="utf-8" />
 	<title></title>
-	<script type="module" src="./script.js" defer></script>
 	<link rel="stylesheet" href="styles.css" />
 	<style>
 		@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap');
 	</style>
 </head>
-
+	
 <body>
 	<div class="header">
 		<a name="title"></a>
@@ -22,7 +21,7 @@
 				<ul>
 					<li><a href="index.html">О нас</a></li>
 					<li><a href="#resources">Ресурсы</a></li>
-					<li><a href="#contact">Телеграмм</a></li>
+					<li><a href="#contact">Контакты</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -43,83 +42,46 @@
 						информацию для самообучения и повышения концентрации. Также, основываясь на проведенные опросы,
 						разобраны темы волнующие большинство студентов.
 					</div>
+					<a name="resources"></a>
 				</div>
 			</div>
 		</div>
 		<div class="resources">
-			<a name="resources"></a>
 			<div class="element-animation">
 				<p class="resources_txt_1">Ресурсы</p>
 				<p class="resources_txt_2">Здесь вы сможете найти интересующую вас информацию:</p>
 			</div>
 			<div class="menu">
 				<div class="card">
-					<a href="#movies" onclick="showDv('1')"><img src="img/movie.png" alt="" width="100" height="90"></a>
-					<a href="movies.html">Подробнее</a>
+					<a href="movies.html"><img src="img/movie.png" alt="" width="100" height="90"></a>
 					<div class="description">
 						<p>Фильмы</p>
 					</div>
 				</div>
 				<div class="card">
-					<a href="#podcasts" onclick="showDv('2')"><img src="img/podcast.png" alt="" width="50"
-							height="90"></a>
+					<a href="#podcasts"><img src="img/podcast.png" alt="" width="50" height="90"></a>
 					<div class="description">
 						<p>Подкасты</p>
 					</div>
 				</div>
 				<div class="card">
-					<a href="#books" onclick="showDv('3')"><img src="img/book.png" alt="" width="110" height="90"></a>
+					<a href="books.html"><img src="img/book.png" alt="" width="110" height="90"></a>
 					<div class="description">
 						<p>Книги</p>
 					</div>
 				</div>
 				<div class="card">
-					<a href="#checklists" onclick="showDv('4')"><img src="img/checklist.png" alt="" width="70"
-							height="90"></a>
+					<a href="#checklists"><img src="img/checklist.png" alt="" width="70" height="90"></a>
 					<div class="description">
 						<p>Чек-листы</p>
 					</div>
 				</div>
 				<div class="card">
-					<a href="#useful_app" onclick="showDv('5')"><img style="align-self:center;" src="img/apps.png"
-							alt="" width="50" height="90"></a>
+					<a href="apps.html"><img style="align-self:center;" src="img/apps.png" alt="" width="50" height="90"></a>
 					<div class="description">
 						<p>Полезные <br>приложения</p>
 					</div>
 				</div>
-			</div>
-		</div>
-	</div>
-	<div class="content">
-		<div id="movies">
-			<div id="d1">
-				<div
-					style="background-image: url(img/sun-light-reflection-glass.jpg); width: 100%; height: 500px; background-size: 100% 100%;">
-					<div class="sketchy">
-						<p>Фильмы</p><span>Подборка фильмов для самообучения и саморазвития</span>
-					</div>
-				</div>
-				<div class="movies_data"> </div>
-			</div>
-		</div>
-		<div id="podcasts">
-			<div style="background: red;display:none; width: 100%;" id="d2">
-
-			</div>
-		</div>
-		<div id="books">
-			<div style="background: green;display:none; width: 100%;" id="d3">
-
-			</div>
-		</div>
-		<div id="checklists">
-			<div style="background: green;display:none; width: 100%;" id="d4">
-
-			</div>
-		</div>
-		<div id="useful_app">
-			<div style="background: green;display:none; width: 100%;" id="d5">
-
 			</div>
 		</div>
 	</div>
@@ -129,8 +91,12 @@
 			<div class="contact">
 				<div class="element-animation">
 					<p class="contact_txt">По всем вопросам свяжитесь с нами любым удобным способом:</p>
-					<div class="contact_txt_1"><span>E-mail:</span> hello@company.com </div>
-					<div class="contact_txt_2"><span>Телеграмм:</span> ... </div>
+					<div class="contact_txt_1">
+						<span>E-mail:</span> hello@company.com
+					</div>
+					<div class="contact_txt_2">
+						<a href="https://t.me/+LONPpolOaIs1MjM6"><img src="img/telegram.png" alt="" width="80" height="80"></a>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -164,5 +130,4 @@
 		}
 	</script>
 </body>
-
 </html>
