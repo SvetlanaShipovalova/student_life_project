@@ -1,4 +1,4 @@
-import movie from "./movie_data.js";
+import movie from "../data/movie_data.js";
 
 function renderMovieSlider() {
   let cardSliderHTML = ``;

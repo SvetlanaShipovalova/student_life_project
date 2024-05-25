@@ -4,8 +4,8 @@
 <head>
 	<meta charset="utf-8" />
 	<title></title>
-	<script type="module" src="./render_books.js" defer></script>
-	<link rel="stylesheet" href="styles.css" />
+	
+	<link rel="stylesheet" href="../styles.css" />
 	<style>
 		@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap');
 	</style>
@@ -16,24 +16,26 @@
 		<a name="title"></a>
 		<div class="container">
 			<div class="logo">
-				<img src="img/logo.png" alt="" width="70" height="70" />
+				<a href="index.html">
+				<img src="../img/logo.png" alt="" width="70" height="70" />
+					<p class="logo_text">В общем и целом <br>о студенческой жизни</p></a>
 			</div>
 			<nav>
 				<ul>
-					<li><a href="index.html">О нас</a></li>
+					<li><a href="../index.html">О нас</a></li>
 				</ul>
 			</nav>
 		</div>
 	</div>
 	<div class="section">
 		<div class="sketchy">
-			<p>Книги</p>
-			<span>Списки и подборки книг различных тематик и жанров</span>
+			<p>ЧЕК-ЛИСТЫ</p>
+			<span>Здесь вы сможете найти подборку чеклистов для вашего самообучения и саморазвития.</span>
 		</div>
 	</div>
 	<div style="width: 100%; height:50px; background-color:#a98467 "></div>
 	<div class="content">
-		<div class="books_data"></div>
+		 <div id="root"></div>
 	</div>
 	<div class="footer">
 		<a name="contact"></a>
@@ -45,12 +47,13 @@
 						<span>E-mail:</span> hello@company.com 
 					</div>
 					<div class="contact_txt_2">
-						<a href="https://t.me/+LONPpolOaIs1MjM6"><img src="img/telegram.png" alt="" width="80" height="80"></a>
+						<a href="https://t.me/+LONPpolOaIs1MjM6"><img src="../img/telegram.png" alt="" width="80" height="80"></a>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+	
 	<script>
 		function onEntry(entry) {
 			entry.forEach(change => {

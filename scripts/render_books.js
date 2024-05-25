@@ -1,4 +1,4 @@
-import book from "./book_data.js";
+import book from "../data/book_data.js";
 
 function renderBookSlider() {
   let cardSliderHTML = ``;
