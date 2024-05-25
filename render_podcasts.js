@@ -1,4 +1,4 @@
-import podcast from "../data/podcasts_data.js";
+import podcast from "./podcasts_data.js";
 
 function renderAppSlider() {
   let cardSliderHTML = ``;
