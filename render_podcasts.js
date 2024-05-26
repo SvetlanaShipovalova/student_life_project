@@ -12,7 +12,6 @@ function renderAppSlider() {
 <div class="podcasts_01">
 	<div class="podcast_text"><h2>Подкаст №${id}</h2>
 	"${name}"
-<a href="https://www.google.ru/" class="btn btn-1 btn-sep icon-info">Полная версия подкаста</a>
 </div>
 	<video controls width="900px" class="video">
   <source src="${video}" type="video/mp4" />
